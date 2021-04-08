@@ -12,7 +12,7 @@ public class App {
 
         String arquivo = Files.readString(fileName); 
 
-        String linhas[] = actual.split("\\r?\\n");
+        String linhas[] = arquivo.split("\\r?\\n");
 
         String resultado="";
 
