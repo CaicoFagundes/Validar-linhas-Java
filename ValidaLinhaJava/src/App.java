@@ -10,13 +10,13 @@ public class App {
 
         Path fileName = Path.of("./src/prog.txt");
 
-        String actual = Files.readString(fileName); 
+        String arquivo = Files.readString(fileName); 
 
-        String lines[] = actual.split("\\r?\\n");
+        String linhas[] = actual.split("\\r?\\n");
 
         String resultado="";
 
-        for (String string : lines) {           
+        for (String string : linhas) {           
             if(ValidaLinha(string)){
                 resultado=resultado+string+"- OK"+"\r\n";
             }
